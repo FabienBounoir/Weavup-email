@@ -18,6 +18,14 @@
 
 			.boutonRefuser
 			{
+				color: #455a64; 
+				border-radius: 500px; 
+				border: 3px;
+				padding: 6px 20px 8px; 
+			}
+
+			.boutonAccepter
+			{
 				color: #fff; 
 				background-color: #ff5722; 
 				border-radius: 500px; 
@@ -26,7 +34,7 @@
 				text-decoration: none;
 			}
 
-			.boutonRefuser:hover
+			.boutonAccepter:hover
 			{
 				transition: all .5s ease-in-out;
 				color: #ff5722 ; 
@@ -189,20 +197,19 @@
 								<!-- / Premier partie -->
 								<table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
 									<tr>
-										<td class="hero-subheader__title" style="font-size: 43px; font-weight: bold; padding: 40px 0 15px 0;" align="left">Bonjour [%PRENOM%]</td>
+										<td class="hero-subheader__title" style="font-size: 43px; font-weight: bold; padding: 40px 0 15px 0;" align="left">Bonjour [%PRENOM%],</td>
 									</tr>
 
 									<tr>
 										<td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color:#455a64; padding: 0 60px 20px 0;" align="left">Nous
 											partageons des exp&eacute;riences ou int&eacute;r&ecirc;ts
-											communs. Je
-											souhaite vous rencontrer pour : [%OBJECTIFRDV%]. C'est l'occasion de
+											communs. Je propose de nous rencontrer pour [%OBJECTIFRDV%]. C'est l'occasion de
 											reprendre contact et d'&eacute;changer.
 										</td>
 									</tr>
 									<tr>
-										<td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color:#455a64; padding: 0 60px 20px 0;" align="left">Je fais partie des r&eacute;seaux [%SPHERECOMMUNES%] et
-											m'int&eacute;resse aux sujets suivants : [%CENTRECOMMUN%].
+										<td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color:#455a64; padding: 0 60px 20px 0;" align="left">
+											Nous sommes tous deux membres des r&eacute;seaux [%SPHERECOMMUNES%] et partageons un int&eacute;r&ecirc;t sur [%CENTRECOMMUN%]. C&apos;est l&apos;occasion de reprendre contact et d&apos;&eacute;changer.
 										</td>
 									</tr>
 									<tr>
@@ -220,14 +227,16 @@
 											<table class="container" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px; border-bottom: solid 1px #eeeeee ">
 												<tr>
 													<td class="paragraph-block__content" style="font-size: 16px; line-height: 27px; color:#455a64; padding: 15px 60px 20px 0;" align="left">
-														Je
-														vous propose l'un des cr&eacute;neaux suivants :
+														Je propose l'un des créneaux suivants :
 														<br>
 														[%BOUTONS]
 													</td>
 												</tr>
 												<tr>
 													<td class="paragraph-block__content" style="font-size: 16px; line-height: 27px; color:#455a64; padding: 0 60px 20px 0;" align="left">
+														<a href="[%REFUSRDV%]" class="boutonAccepter" onclick="window.open('[%ACCEPRDV%]', 'Refus RDV Weavup', 'height=600, width=800, top=90, left=350, toolbar=no, menubar=no, location=yes, resizable=yes, scrollbars=yes, status=no'); return false;">
+															Accepter
+														</a>
 														<a href="[%REFUSRDV%]" class="boutonRefuser" onclick="window.open('[%REFUSRDV%]', 'Refus RDV Weavup', 'height=600, width=800, top=90, left=350, toolbar=no, menubar=no, location=yes, resizable=yes, scrollbars=yes, status=no'); return false;">
 															Refuser
 														</a>
@@ -245,7 +254,7 @@
 											<table class="container" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px; border-bottom: solid 1px #eeeeee ">
 												<tr>
 													<td class="paragraph-block__content" style="font-size: 16px; line-height: 27px; color:#455a64; padding: 15px 60px 20px 0;" align="left">
-														A bient&ocirc;t,
+														A tr&egrave;s vite,                
 														<br>
 														[%PRENOMEXPEDITEUR%]
 													</td>
@@ -297,7 +306,7 @@
 															b&eacute;n&eacute;ficiez d&rsquo;un droit
 															d&rsquo;acc&egrave;s et de rectification aux informations qui
 															vous concernent, que vous pouvez exercer en vous adressant &agrave;
-															<span style="text-decoration: underline; color:#fe5721">
+															<span style="text-decoration: underline; color:#acacac">
 															  admin@weavup.com
 															</span>.
 															Vous pouvez &eacute;galement, pour des motifs
